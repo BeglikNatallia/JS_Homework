@@ -1,0 +1,127 @@
+@media all and (max-width: 1000px) {
+    .conteiner, .menu, .mainPart {
+        width: 100%;
+    }
+    .submenu {
+        width: 170px;
+    }
+    .content {
+        margin-left: 170px;
+    }
+    #pageTitle {
+        padding: 20px 0 20px 20px;
+    }
+    .form {
+        padding: 5px 20px;
+    }
+    .user {
+        margin: 20px;
+    }
+    .submenu li {
+        padding: 9px 15px 9px 15px;
+    }
+    .buttons {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media all and (max-width: 770px) {
+    .conteiner, .menu, .mainPart {
+        width: 100%;
+    }
+    .submenu {
+        width: 160px;
+    }
+    .content {
+        margin-left: 160px;
+    }
+    #pageTitle {
+        padding: 15px 0 15px 15px;
+    }
+    .form {
+        padding: 5px 15px;
+    }
+    .user {
+        margin: 15px;
+    }
+    .searchPlace {
+        width: 170px;
+        height: 30px;
+    }
+    .buttons {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media all and (max-width: 650px) {
+    .conteiner, .menu, .mainPart {
+        width: 100%;
+    }
+    .submenu {
+        width: 130px;
+    }
+    .content {
+        margin-left: 130px;
+    }
+    .information{
+        font-size: 12px;
+    }
+    #nameSubmenu {
+        font-size: 16px;
+    }
+    #pageTitle {
+        padding: 15px 0 15px 15px;
+        font-size: 25px;
+    }
+
+}
+
+@media all and (max-width: 550px) {
+    .conteiner, .menu, .mainPart {
+        width: 100%;
+    }
+    .submenu, .navigation, label, .copyright, .header, .form {
+        display: none;
+    }
+    .headerMobile {
+        display: block;
+    }
+    .content {
+        margin-left: 0px;
+    }
+    #logo {
+        width: 32px;
+        height: 20px;
+        margin: 18px 0 18px 6px;
+    }
+    #pageTitle {
+        padding: 15px 0 15px 15px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .userInfo, .tags {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .buttons {
+        margin-bottom: 40px;
+    }
+    .btn {
+        padding: 15px 25px 15px 20px;
+    }
+    .formMobile {
+        display: block;
+    }
+
+    .mobile-wrap {
+        display: inline-block;
+    }
+}
+
