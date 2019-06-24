@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/media.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
     <title>Qulix Systems</title>
 </head>
 <body>
@@ -19,20 +24,21 @@
             <img src="images/logo.png" id="logo" alt="logo Qulix Systems">
         </div>
             <div>
-            <div class = "city">New York</div>
+                <div class = "city"><a href="#">New York</a></div>
             <i class="fas fa-angle-down"></i>
             <i class="fas fa-bell"></i>
             <i class="fas fa-envelope"></i>
-            <div class = "userName">User Name  <img  id="userPhoto" src="images/userPhoto.jpg" alt="userPhoto"></div>
-            <i class="fas fa-search"></i>
+                <div class = "userName"><a href="#">User Name  </a>
+                    <a href="#"><img  id="userPhoto" src="images/userPhoto.jpg" alt="userPhoto"></a></div>
+                <a href="#"><i class="fas fa-search"></i></a>
             </div>
     </div>
 </div>
 <div class="headerMobile">
-    <i class="fa fa-bars"></i>
-    <img class="logoMob" src="images/logo-white.png"  alt="logo Qulix Systems"><span>Page title</span>
+    <div class="hamburger"><i class="fa fa-bars"></i></div>
+    <div class="otherInf"><img class="logoMob" src="images/logo-white.png"  alt="logo Qulix Systems"><span>Page title</span>
     <img class="userPhotoMob" src="images/userPhotoBig.jpg"  alt="userPhoto">
-    <i class="fas fa-search"></i>
+        <a href="#"><i class="fas fa-search"></i></a></div>
 </div>
 <div class = "navigation">
     <ul class = "menu">
@@ -56,35 +62,35 @@
     <div class="mainPart">
         <div class="submenu">
             <ul>
-                <li class="item"><a href="">Submenu item 7d</a></li>
-                <li class="item"><a href="">Submenu item 7d</a></li>
+                <li class="item"><a href="#">Submenu item 7d</a></li>
+                <li class="item"><a href="#">Submenu item 7d</a></li>
             </ul>
             <ul>
                 <li class="nameSubmenu">Submenu</li>
-                <li class="item"><a href="">Submenu item 7d</a></li>
-                <li class="item"><a href="">Submenu item 2d</a></li>
-                <li class="item"><a href="">Submenu item 4d</a></li>
-                <li class="item"><a href="">More tags</a></li>
+                <li class="item"><a href="#">Submenu item 7d</a></li>
+                <li class="item"><a href="#">Submenu item 2d</a></li>
+                <li class="item"><a href="#">Submenu item 4d</a></li>
+                <li class="item"><a href="#">More tags</a></li>
             </ul>
             <ul>
                 <li class="nameSubmenu">Submenu</li>
-                <li class="item"><a href="">Submenu item 1d</a></li>
-                <li class="item"><a href="">Submenu item 1d</a></li>
+                <li class="item"><a href="#">Submenu item 1d</a></li>
+                <li class="item"><a href="#">Submenu item 1d</a></li>
             </ul>
             <ul>
                 <li class="nameSubmenu">Submenu</li>
-                <li class="item"><a href="">Submenu item 4d</a></li>
-                <li class="item"><a href="">Submenu item 2d</a></li>
-                <li class="item"><a href="">Submenu item 1d & </br>Submenu item 2d</a></li>
-                <li class="item"><a href="">Submenu item 7d</a></li>
-                <li class="item"><a href="">Submenu item 1d</a></li>
-                <li class="item"><a href="">Submenu item 1d</a></li>
+                <li class="item"><a href="#">Submenu item 4d</a></li>
+                <li class="item"><a href="#">Submenu item 2d</a></li>
+                <li class="item"><a href="#">Submenu item 1d & </br>Submenu item 2d</a></li>
+                <li class="item"><a href="#">Submenu item 7d</a></li>
+                <li class="item"><a href="#">Submenu item 1d</a></li>
+                <li class="item"><a href="#">Submenu item 1d</a></li>
             </ul>
             <ul>
                 <li class="nameSubmenu">Submenu</li>
-                <li class="item"><a href="">Submenu item 2d</a></li>
-                <li class="item"><a href="">Submenu item 1d</a></li>
-                <li class="item"><a href="">Submenu item 3d</a></li>
+                <li class="item"><a href="#">Submenu item 2d</a></li>
+                <li class="item"><a href="#">Submenu item 1d</a></li>
+                <li class="item"><a href="#">Submenu item 3d</a></li>
             </ul>
         </div>
         <div class="content">
@@ -96,7 +102,7 @@
                 <div class="newItem"><span>+ New item</span><i class="fas fa-sliders-h"></i></div>
             </div>
             <div class="formMobile">
-                <i class="fas fa-search"></i>
+                <a href="#"><i class="fas fa-search"></i></a>
                 <div class="plusSlider">
                     <i class="fas fa-plus"></i>
                     <i class="fas fa-sliders-h"></i>

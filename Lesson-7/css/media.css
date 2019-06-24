@@ -2,12 +2,6 @@
     .conteiner, .menu, .mainPart {
         width: 100%;
     }
-    .submenu {
-        width: 170px;
-    }
-    .content {
-        margin-left: 170px;
-    }
     #pageTitle {
         padding: 20px 0 20px 20px;
     }
@@ -16,9 +10,6 @@
     }
     .user {
         margin: 20px;
-    }
-    .submenu li {
-        padding: 9px 15px 9px 15px;
     }
     .buttons {
         margin-bottom: 40px;
@@ -29,12 +20,6 @@
 @media all and (max-width: 770px) {
     .conteiner, .menu, .mainPart {
         width: 100%;
-    }
-    .submenu {
-        width: 160px;
-    }
-    .content {
-        margin-left: 160px;
     }
     #pageTitle {
         padding: 15px 0 15px 15px;
@@ -52,30 +37,22 @@
     .buttons {
         margin-bottom: 30px;
     }
-
 }
 
 @media all and (max-width: 650px) {
     .conteiner, .menu, .mainPart {
         width: 100%;
     }
-    .submenu {
-        width: 130px;
-    }
-    .content {
-        margin-left: 130px;
-    }
-    .information{
-        font-size: 12px;
-    }
-    #nameSubmenu {
-        font-size: 16px;
-    }
     #pageTitle {
         padding: 15px 0 15px 15px;
         font-size: 25px;
     }
+}
 
+@media all and (min-width: 550px) {
+    .menuMobile{
+        display:none !important;
+    }
 }
 
 @media all and (max-width: 550px) {
@@ -119,9 +96,7 @@
     .formMobile {
         display: block;
     }
-
-    .mobile-wrap {
-        display: inline-block;
-    }
 }
+
+
 

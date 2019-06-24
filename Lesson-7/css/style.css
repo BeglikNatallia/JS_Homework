@@ -29,6 +29,11 @@
     margin: 0 6px 0 10px;
 }
 
+.city a, .userName a, .conteiner a .fas {
+    text-decoration: none;
+    color: #727989;
+}
+
 .header div i {
     font-size: 18px;
 }
@@ -54,11 +59,11 @@
 .headerMobile {
     display: none;
     color: white;
-    background-color: black;
+    background-color: #2d313d;
     text-align: center;
 }
 
-.headerMobile .fas fa-bars {
+.headerMobile .hamburger {
     float: left;
     padding-left: 10px;
 }
@@ -66,6 +71,11 @@
 .headerMobile i {
     font-size: 25px;
     padding: 32px 40px;
+}
+
+.headerMobile .otherInf a {
+    text-decoration: none;
+    color: white;
 }
 
 .headerMobile .logoMob {
@@ -97,7 +107,7 @@
     color: white;
     padding: 7px 0 12px;
     margin-right: 26px;
-    border-top: solid #646d81 5px;
+    border-top: solid #646d81 1px;
 }
 
 .menu {
@@ -108,7 +118,7 @@
 }
 
 .menu a:hover {
-    border-top: solid white 5px;
+    border-top: solid white 1px;
 }
 
 .menuMobile {
@@ -140,18 +150,18 @@
 }
 
 .content {
-    margin-left: 200px;
+    margin-left: 170px;
     border-left: solid #e0e4ed 1px;
 }
 .submenu {
     float: left;
-    width: 200px;
+    width: 170px;
     padding-top: 20px;
     font-family: Lato;
 }
-.submenu li {
-    padding: 9px 30px 9px 25px;
-    border-left: solid white 5px;
+.submenu li.item {
+    padding: 0;
+    border-left: solid white 1px;
     text-align: left;
 }
 .nameSubmenu {
@@ -160,6 +170,8 @@
     text-align: left;
     margin-top: 30px;
     font: Georgia;
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 
 .item {
@@ -170,10 +182,12 @@
     text-decoration: none;
     color: #99a1b3;
     display: block;
+    padding: 9px 30px 9px 30px;
+
 }
 
 .submenu ul li.item:hover {
-    border-left: solid #99a1b3 5px;
+    border-left: solid #99a1b3 1px;
     color: black;
 }
 
@@ -218,6 +232,11 @@
     padding: 15px 25px;
     color: #99a1b3;
     font-size: 25px;
+}
+
+.formMobile a .fas {
+    text-decoration: none;
+    color: #99a1b3;
 }
 
 .plusSlider {
@@ -332,5 +351,32 @@
     font-family: Lato;
 }
 
+.menuMobile li {
+    padding: 5px 15px;
+    background-color: #2d313d;
+    text-align: center;
+}
 
+.menuMobile li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.menuMobile li a:hover {
+    color: grey;
+}
+
+.headerMobile div i .fa {
+    float: left;
+}
+
+.headerMobile i {
+    font-size: 20px;
+    padding: 32px 0px 32px 10px;
+}
+
+.headerMobile i:hover {
+    color: grey;
+}
 
