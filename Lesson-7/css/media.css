@@ -1,5 +1,5 @@
 @media all and (max-width: 1000px) {
-    .conteiner, .menu, .mainPart {
+    .conteiner, .menu, .mainPart, .newFooter {
         width: 100%;
     }
     #pageTitle {
@@ -11,14 +11,11 @@
     .user {
         margin: 20px;
     }
-    .buttons {
-        margin-bottom: 40px;
-    }
 
 }
 
 @media all and (max-width: 770px) {
-    .conteiner, .menu, .mainPart {
+    .conteiner, .menu, .mainPart, .newFooter {
         width: 100%;
     }
     #pageTitle {
@@ -35,17 +32,26 @@
         height: 30px;
     }
     .buttons {
-        margin-bottom: 30px;
+        padding-bottom: 25px;
     }
 }
 
 @media all and (max-width: 650px) {
-    .conteiner, .menu, .mainPart {
+    .conteiner, .menu, .mainPart, .newFooter {
         width: 100%;
     }
     #pageTitle {
         padding: 15px 0 15px 15px;
         font-size: 25px;
+    }
+    .submenu {
+        border-right: none;
+    }
+    .content {
+        border-left: solid #e0e4ed 1px;
+    }
+    .buttons {
+        padding-bottom: 25px;
     }
 }
 
@@ -56,7 +62,7 @@
 }
 
 @media all and (max-width: 550px) {
-    .conteiner, .menu, .mainPart {
+    .conteiner, .menu, .mainPart, .newFooter {
         width: 100%;
     }
     .submenu, .navigation, label, .copyright, .header, .form {
@@ -66,7 +72,7 @@
         display: block;
     }
     .content {
-        margin-left: 0px;
+        margin-left: 0;
     }
     #logo {
         width: 32px;
@@ -88,7 +94,7 @@
         font-size: 16px;
     }
     .buttons {
-        margin-bottom: 40px;
+        padding-bottom: 30px;
     }
     .btn {
         padding: 15px 25px 15px 20px;
