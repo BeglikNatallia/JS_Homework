@@ -10,6 +10,9 @@ function deepClone(obj) {
         if (Array.isArray(obj[key]) === true) {
             var newArr = [];
             for (var i = 0; i < obj[key].length; i++) {
+                if (typeof (obj[key][i]) === 'object' && Array.isArray(obj[key][i]) === false && obj[key][i] !== null) {
+                    newArr[i] = deepClone(obj[key][i]);
+                }
                 newArr[i] = obj[key][i];
             }
             copy[key] = newArr;
