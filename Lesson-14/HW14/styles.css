@@ -1,0 +1,25 @@
+.inputs p {
+    display: inline-block;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.backgroundTable {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.changeBackgroundTable {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
