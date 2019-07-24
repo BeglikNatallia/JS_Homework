@@ -1,0 +1,23 @@
+#table {
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+}
+
+#button {
+    colspan: 3;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+input {
+    width: 145px;
+}
