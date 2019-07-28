@@ -19,32 +19,30 @@ button.onclick = function () {
     }
 };
 
-var secondParLink3 = secondPar.getElementsByTagName('a')[0];
-var secondParLink4 = secondPar.getElementsByTagName('a')[1];
+var secondParLink = secondPar.getElementsByTagName('a');
 
-secondParLink3.addEventListener('click', function (event) {
+secondPar.onclick = function (event) {
     event.preventDefault();
+    var target = event.target;
+    while (target !== this) {
+        for (var j = 0; j < secondParLink.length; j++) {
+            if (target === secondParLink[j]) {
+                checkLocalStorage(j);
+                break;
+            }
+        }
+        target = target.parentNode;
+    }
+};
 
-    if (!localStorage.Link3) {
-        localStorage.setItem('Link3', JSON.stringify('{ path: \'https://google.com\' }'));
+function checkLocalStorage(n) {
+    if (!localStorage['Link ' + (n + 3)]) {
+        localStorage.setItem('Link ' + (n + 3), JSON.stringify({path: 'https://google.com'}));
         alert('Ссылка сохранена')
     } else {
-        alert(JSON.parse(localStorage.Link3));
+        alert(JSON.parse(localStorage['Link ' + (n + 3)])['path']);
     }
-
-}, false);
-
-secondParLink4.addEventListener('click', function (event) {
-    event.preventDefault();
-
-    if (!localStorage.Link4) {
-        localStorage.setItem('Link4', JSON.stringify('{ path: \'https://google.com\' }'));
-        alert('Ссылка сохранена')
-    } else {
-        alert(JSON.parse(localStorage.Link4));
-    }
-
-}, false);
+}
 
 var clearLocalStorage = document.getElementsByTagName('body')[0];
 
