@@ -3,22 +3,26 @@ var user = document.getElementsByClassName('user')[0];
 var userInfo = document.getElementsByClassName('user-info')[0];
 
 button.onclick = function () {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://reqres.in/api/users?page=2', true);
-    xhr.onload = function () {
-        try {
-            var usersData = JSON.parse(this.response).data;
-            if (usersData.length) {
-                localStorage.setItem('Users', JSON.stringify(usersData));
-                drawUsersTabs(usersData);
-            } else {
+    if (localStorage.Users) {
+        drawUsersTabs(JSON.parse(localStorage.Users));
+    } else {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://reqres.in/api/users?page=23', true);
+        xhr.onload = function () {
+            try {
+                var usersData = JSON.parse(this.response).data;
+                if (usersData.length) {
+                    localStorage.setItem('Users', JSON.stringify(usersData));
+                    drawUsersTabs(usersData);
+                } else {
+                    error();
+                }
+            } catch (ex) {
                 error();
             }
-        } catch (ex) {
-            error();
-        }
-    };
-    xhr.send();
+        };
+        xhr.send();
+    }
 };
 
 function drawUsersTabs(arr) {
@@ -84,6 +88,7 @@ function showTabsContent(b) {
 }
 
 function error() {
+    user.innerHTML = '';
     var error = document.createElement('p');
     error.innerHTML = 'An error occured while loading data';
     error.classList.add('error');
