@@ -1,0 +1,40 @@
+.buttons {
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    border-radius: 5px;
+    border: yellowgreen solid 1px;
+    background-color: yellowgreen;
+    padding: 5px 20px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.time {
+    flex-basis: 100px;
+    border-radius: 5px;
+    border: grey solid 1px;
+    padding: 5px 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.stopwatch {
+    display: flex;
+    justify-content: center;
+}
+
+.save, .reset {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+p {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 30px;
+}
